@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:physio_doc/theme/style.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -42,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
               width: 300,
               height: 55,
               decoration: BoxDecoration(
-                color: Colors.blueAccent,
+                color: buttonClr,
                 borderRadius: BorderRadius.circular(15),
               ),
               child: const Center(
