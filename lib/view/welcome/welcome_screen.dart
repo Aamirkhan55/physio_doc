@@ -36,14 +36,14 @@ class WelcomeScreen extends StatelessWidget {
               ),
            ),
            const SizedBox(height: 20), 
-           GestureDetector(
+           InkWell(
             onTap: () {},
              child: Container(
               width: 300,
               height: 55,
               decoration: BoxDecoration(
                 color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(25),
+                borderRadius: BorderRadius.circular(15),
               ),
               child: const Center(
                 child: Text(
@@ -51,12 +51,41 @@ class WelcomeScreen extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w300,
-                    fontSize: 22,
+                    fontSize: 26,
                   ),
                   ),
               ),
              ),
            ),
+          const SizedBox(height: 20), 
+           Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 32),
+            child: Row(
+              children: [
+                const Text(
+                  "Don't Have Account ?",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400,
+                  ),
+                  ),
+                const SizedBox(width: 5),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Text(
+                    'Sign up',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                    ),
+                    ),
+                )
+              ],
+            ),
+          )
           ],
         ),
     ),
