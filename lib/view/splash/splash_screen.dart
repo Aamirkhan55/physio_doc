@@ -60,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Image.asset(
                   'assets/Ellipse 2.png',
                   width: 22,
