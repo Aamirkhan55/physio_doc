@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/auth/login.dart';
+import 'package:physio_doc/view/welcome/widgets/wel_Image.dart';
 import 'package:physio_doc/widgets/custom_button.dart';
+import 'package:physio_doc/widgets/custom_title.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -15,34 +17,10 @@ class WelcomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 80),
-            Column(
-              children: [
-                const Text(
-              'Welcome to',
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.w500,
-                color: Colors.black,
+            const CustomTitle(
+              title: 'Welcome to',
               ),
-            ),
-            Image.asset(
-              'assets/nlogo.png',
-              width: 160,
-            ),
-              ],
-            ),
-            
-            Container(
-              width: 300,
-              height: 420,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Image.asset(
-                'assets/Rectangle 1.png',
-                fit: BoxFit.contain,
-              ),
-            ),
+            const WelComImage(),
             const SizedBox(height: 20),
             CustomButton(
               onTap: () {
@@ -87,3 +65,4 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+
