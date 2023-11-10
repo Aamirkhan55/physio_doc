@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/auth/login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -38,7 +39,9 @@ class WelcomeScreen extends StatelessWidget {
            ),
            const SizedBox(height: 20), 
            InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const Login()));
+            },
              child: Container(
               width: 300,
               height: 55,
