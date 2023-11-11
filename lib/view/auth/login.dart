@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
               hintColor: hintColor,
               isPassword: true,
               ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Row(
               children: [
               Container(
@@ -35,9 +35,18 @@ class Login extends StatelessWidget {
                 height: 20,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: buttonClr,
+                  color: buttonClr.withOpacity(0.5),
                 ),
               ),
+              const SizedBox(width: 5),
+             const Text(
+              'Remember me',
+              style: TextStyle(
+                fontSize: 16,
+                color: greyColor,
+                fontWeight: FontWeight.w400
+              ),
+              ), 
             ],)  
           ],
         ),
