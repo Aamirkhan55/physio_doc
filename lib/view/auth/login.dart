@@ -46,7 +46,16 @@ class Login extends StatelessWidget {
                 color: greyColor,
                 fontWeight: FontWeight.w400
               ),
-              ), 
+              ),
+              const SizedBox(width: 50),
+              const Text(
+              'Forgot Password',
+              style: TextStyle(
+                fontSize: 16,
+                color: greyColor,
+                fontWeight: FontWeight.w400
+              ),
+              ),
             ],)  
           ],
         ),
