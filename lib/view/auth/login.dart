@@ -8,19 +8,37 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 60),
-            CustomTitle(title: 'Login'),
-            SizedBox(height: 10),
-             CustomTextField(
+            const SizedBox(height: 90),
+            const CustomTitle(title: 'Login'),
+            const SizedBox(height: 50),
+             const CustomTextField(
               hintText: 'email',
               hintColor: hintColor,
-              )
+              ),
+            const SizedBox(height: 20),  
+             const CustomTextField(
+              hintText: 'password',
+              hintColor: hintColor,
+              isPassword: true,
+              ),
+            const SizedBox(height: 10),
+            Row(
+              children: [
+              Container(
+                width: 20,
+                height: 20,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: buttonClr,
+                ),
+              ),
+            ],)  
           ],
         ),
       ),

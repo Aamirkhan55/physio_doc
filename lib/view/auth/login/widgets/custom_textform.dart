@@ -42,7 +42,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: buttonClr,
+        color: buttonClr.withOpacity(0.4),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
