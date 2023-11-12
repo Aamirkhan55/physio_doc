@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/auth/login.dart';
+import 'package:physio_doc/view/auth/signUp/sign_up.dart';
 import 'package:physio_doc/view/welcome/widgets/wel_Image.dart';
 import 'package:physio_doc/widgets/custom_button.dart';
 import 'package:physio_doc/widgets/custom_title.dart';
@@ -45,7 +46,9 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 5),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUp()));
+                    },
                     child: const Text(
                       'Sign up',
                       style: TextStyle(
