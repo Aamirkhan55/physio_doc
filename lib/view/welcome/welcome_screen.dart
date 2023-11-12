@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
-import 'package:physio_doc/view/auth/login.dart';
+import 'package:physio_doc/view/auth/login/login.dart';
 import 'package:physio_doc/view/auth/signUp/sign_up.dart';
 import 'package:physio_doc/view/welcome/widgets/wel_Image.dart';
 import 'package:physio_doc/widgets/custom_button.dart';

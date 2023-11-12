@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/auth/login/widgets/custom_textform.dart';
+import 'package:physio_doc/view/home/home_screen.dart';
 import 'package:physio_doc/widgets/custom_button.dart';
 import 'package:physio_doc/widgets/custom_title.dart';
 
@@ -62,7 +63,9 @@ class Login extends StatelessWidget {
               ),
               const SizedBox(height: 60),
               CustomButton(
-                onTap: () {}, 
+                onTap: () {
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+                }, 
                 title: 'Login', 
                 color: buttonClr,
                 ),

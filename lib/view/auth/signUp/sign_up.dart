@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/auth/login/login.dart';
 import 'package:physio_doc/view/auth/login/widgets/custom_textform.dart';
 import 'package:physio_doc/widgets/custom_button.dart';
 import 'package:physio_doc/widgets/custom_title.dart';
@@ -48,7 +49,9 @@ class _SignUpState extends State<SignUp> {
               ),
               const SizedBox(height: 50),
               CustomButton(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Login()));
+                },
                 title: 'Signup',
                 color: buttonClr,
               ),
