@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
-import 'package:physio_doc/view/home/custom_darwer.dart';
+import 'package:physio_doc/view/home/widgets/custom_darwer.dart';
 import 'package:physio_doc/view/home/widgets/customExc_field.dart';
 
 
@@ -38,7 +38,9 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 40),  
              CustomExcField(
                title:  'Exercise' ,
-               onTap: () {},
+               onTap: () {
+                
+               },
               ),
             const SizedBox(height: 30),  
              CustomExcField(
@@ -47,7 +49,7 @@ class HomeScreen extends StatelessWidget {
               ), 
               const SizedBox(height: 30),  
              CustomExcField(
-              title: 'Accesssories' ,
+              title: 'Accessories' ,
               onTap: () {},
               ),    
           ],
