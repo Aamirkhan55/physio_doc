@@ -11,34 +11,64 @@ class ExerciseScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: buttonClr,
         leading: IconButton(
-          onPressed: () {}, 
-          icon: const Icon(
-            Icons.menu,
-            size: 32,
-            color: Colors.white
-            ),
-          ),
+          onPressed: () {},
+          icon: const Icon(Icons.menu, size: 32, color: Colors.white),
+        ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10),
-            CustomSearchTextField(
+            const SizedBox(height: 10),
+            const CustomSearchTextField(
               hintTitle: 'find exercise...',
             ),
-            SizedBox(height: 15),
-            Text(
+            const SizedBox(height: 15),
+            const Text(
               'Recent Activities',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
               ),
-              ),
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              height: 70,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  itemCount: 5,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 240,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        color: conBgClr,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Image.asset(
+                                  'assets/Rectangle 1.png',
+                                  width: 100,
+                                  height: 65,
+                                  )
+                              ],
+                            ),
+                          ],
+                        ),
+                        ),
+                    );
+                  }),
+            )
           ],
         ),
-        )  ,
+      ),
     );
   }
 }
