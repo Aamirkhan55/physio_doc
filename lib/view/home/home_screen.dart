@@ -34,15 +34,15 @@ class HomeScreen extends StatelessWidget {
                 )),
             const SizedBox(height: 40),  
             const CustomExcField(
-              hintText: 'Exercise' ,
+               title:  'Exercise' ,
               ),
             const SizedBox(height: 30),  
             const CustomExcField(
-              hintText: 'Injuries' ,
+              title: 'Injuries' ,
               ), 
               const SizedBox(height: 30),  
             const CustomExcField(
-              hintText: 'Accesssories' ,
+              title: 'Accesssories' ,
               ),    
           ],
         ),

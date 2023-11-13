@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomExcField extends StatelessWidget {
-  final String hintText;
+  final String title;
   
   const CustomExcField({
     Key? key,
-    required this.hintText,
+    required this.title,
   }) : super(key: key);
 
   @override
@@ -15,36 +15,32 @@ class CustomExcField extends StatelessWidget {
       width: 310,
       height: 60,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(
+          color: buttonClr,
+          width: 2,
+          )  
       ),
-      child: TextField(
-        decoration: InputDecoration(
-          hintText: hintText,
-          hintStyle: const TextStyle(
+      child: Padding(
+        padding: const  EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+             style: const TextStyle(
+              color: buttonClr,
+              fontSize: 22,
+              fontWeight: FontWeight.w400
+             ), 
+            ),
+          const Icon(
+            Icons.arrow_forward,
             color: buttonClr,
-            fontSize: 23
-          ),
-          suffixIcon: const Icon(
-            Icons.arrow_right_alt,
-            color: buttonClr, 
-            size: 40,
-          ),
-          border: OutlineInputBorder(
-             borderRadius: BorderRadius.circular(20),
-            borderSide: const BorderSide(
-              color: buttonClr,
-              width: 3,
-              ), 
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
-            borderSide: const BorderSide(
-              width: 3,
-              color: buttonClr,
-              ), 
-          ),
-          filled: false,
-        ),
+            size: 32,
+            ) 
+          ],
+        )
       ),
     );
   }
