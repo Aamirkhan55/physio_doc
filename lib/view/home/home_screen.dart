@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/home/custom_darwer.dart';
 import 'package:physio_doc/view/home/widgets/customExc_field.dart';
 
 
@@ -13,7 +14,9 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const CustomDrawer()));
+          },
           icon: const Icon(
             Icons.menu,
             size: 30,
