@@ -22,11 +22,20 @@ class ExerciseScreen extends StatelessWidget {
       body: const Padding(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 10),
             CustomSearchTextField(
               hintTitle: 'find exercise...',
-            )
+            ),
+            SizedBox(height: 15),
+            Text(
+              'Recent Activities',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+              ),
+              ),
           ],
         ),
         )  ,
