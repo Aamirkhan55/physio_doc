@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/widgets/custom_searchBar.dart';
 
 class ExerciseScreen extends StatelessWidget {
   const ExerciseScreen({super.key});
@@ -18,6 +19,17 @@ class ExerciseScreen extends StatelessWidget {
             ),
           ),
       ),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        child: Column(
+          children: [
+            SizedBox(height: 10),
+            CustomSearchTextField(
+              hintTitle: 'find exercise...',
+            )
+          ],
+        ),
+        )  ,
     );
   }
 }
