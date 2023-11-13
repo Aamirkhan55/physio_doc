@@ -3,10 +3,11 @@ import 'package:physio_doc/theme/style.dart';
 
 class CustomExcField extends StatelessWidget {
   final String title;
+  final VoidCallback? onTap;
   
   const CustomExcField({
     Key? key,
-    required this.title,
+    required this.title, this.onTap,
   }) : super(key: key);
 
   @override
@@ -34,11 +35,14 @@ class CustomExcField extends StatelessWidget {
               fontWeight: FontWeight.w400
              ), 
             ),
-          const Icon(
-            Icons.arrow_forward,
-            color: buttonClr,
-            size: 32,
-            ) 
+          InkWell(
+            onTap: onTap,
+            child: const Icon(
+              Icons.arrow_forward,
+              color: buttonClr,
+              size: 32,
+              ),
+          ) 
           ],
         )
       ),

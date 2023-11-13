@@ -33,16 +33,19 @@ class HomeScreen extends StatelessWidget {
                 width: 155,
                 )),
             const SizedBox(height: 40),  
-            const CustomExcField(
+             CustomExcField(
                title:  'Exercise' ,
+               onTap: () {},
               ),
             const SizedBox(height: 30),  
-            const CustomExcField(
+             CustomExcField(
               title: 'Injuries' ,
+              onTap: () {},
               ), 
               const SizedBox(height: 30),  
-            const CustomExcField(
+             CustomExcField(
               title: 'Accesssories' ,
+              onTap: () {},
               ),    
           ],
         ),
