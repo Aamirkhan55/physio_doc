@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/home/exercise/exercise_screen.dart';
 import 'package:physio_doc/view/home/widgets/custom_darwer.dart';
 import 'package:physio_doc/view/home/widgets/customExc_field.dart';
 
@@ -39,7 +40,10 @@ class HomeScreen extends StatelessWidget {
              CustomExcField(
                title:  'Exercise' ,
                onTap: () {
-                
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context) => const ExerciseScreen()),
+                  );
                },
               ),
             const SizedBox(height: 30),  
