@@ -30,6 +30,7 @@ class CustomSubExc extends StatelessWidget {
           child: Text(
             title,
             textAlign: TextAlign.start,
+            maxLines: 1,
             style: const TextStyle(
               color: catClr,
               fontWeight: FontWeight.w600,
