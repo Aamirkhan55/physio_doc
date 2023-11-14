@@ -71,7 +71,7 @@ class RecentActitvities extends StatelessWidget {
                               ),  
                           ],
                         ),
-                      )  
+                      ),  
                       ],
                     ),
                   ],
