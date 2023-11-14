@@ -19,39 +19,68 @@ class ExerciseScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 10),
-            const CustomSearchTextField(
-              hintTitle: 'find exercise...',
-            ),
-            const SizedBox(height: 15),
-            const Text(
-              'Recent Activities',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w400,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 10),
+              const CustomSearchTextField(
+                hintTitle: 'find exercise...',
               ),
-            ),
-            const SizedBox(height: 20),
-            const RecentActitvities(),
-            const SizedBox(height: 20),
-            const Center(
-              child: Text(
-                'Exercises',
+              const SizedBox(height: 15),
+              const Text(
+                'Recent Activities',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 16,
                   fontWeight: FontWeight.w400,
-                  color: txtColor,
                 ),
+              ),
+              const SizedBox(height: 20),
+              const RecentActitvities(),
+              const SizedBox(height: 20),
+              const Center(
+                child: Text(
+                  'Exercises',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w400,
+                    color: txtColor,
+                  ),
+                  ),
+              ),
+              const SizedBox(height: 20),
+              CustomSubExc(
+                onTap: () {} , 
+                title: 'Shoulder Girdle Exercises'
                 ),
-            ),
-            CustomSubExc(
-              onTap: () {} , 
-              title: 'Shoulder Girdle Exercises'
-              )
-          ],
+              const SizedBox(height: 5),
+              CustomSubExc(
+                onTap: () {} , 
+                title: 'Shoulder Girdle Exercises'
+                ),
+                const SizedBox(height: 5),
+              CustomSubExc(
+                onTap: () {} , 
+                title: 'Shoulder Girdle Exercises'
+                ),
+                const SizedBox(height: 5),
+              CustomSubExc(
+                onTap: () {} , 
+                title: 'Shoulder Girdle Exercises'
+                ),
+                const SizedBox(height: 5),
+              CustomSubExc(
+                onTap: () {} , 
+                title: 'Shoulder Girdle Exercises'
+                ),
+                const SizedBox(height: 5),
+              CustomSubExc(
+                onTap: () {} , 
+                title: 'Shoulder Girdle Exercises'
+                ),
+        
+            ],
+          ),
         ),
       ),
     );
