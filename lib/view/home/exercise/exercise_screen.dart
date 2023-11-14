@@ -34,35 +34,50 @@ class ExerciseScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             SizedBox(
-              height: 70,
+              height: 83,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   shrinkWrap: true,
                   itemCount: 5,
                   itemBuilder: (context, index) {
-                    return Container(
-                      width: 240,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        color: conBgClr,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: 230,
+                        height: 83,
+                        decoration: BoxDecoration(
+                          color: conBgClr,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
                         child: Column(
                           children: [
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Image.asset(
-                                  'assets/Rectangle 1.png',
-                                  width: 100,
-                                  height: 65,
-                                  )
+                                Container(
+                                   width: 100,
+                                    height: 65,
+                                  decoration:  BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 64.png',
+                                    fit: BoxFit.cover,            
+                                    ),
+                                ),
+                              const Padding(
+                                padding:  EdgeInsets.all(8.0),
+                                child:  Column(
+                                  children: [
+                                    Text('Shoulder Girdle')
+                                  ],
+                                ),
+                              )  
                               ],
                             ),
                           ],
                         ),
-                        ),
+                      ),
                     );
                   }),
             )
