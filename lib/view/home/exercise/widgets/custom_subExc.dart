@@ -25,13 +25,16 @@ class CustomSubExc extends StatelessWidget {
           color: subExcClr,
           borderRadius: BorderRadius.circular(15),
         ),
-        child: Text(
-          title,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w300,
-            fontSize: 30,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          child: Text(
+            title,
+            textAlign: TextAlign.start,
+            style: const TextStyle(
+              color: catClr,
+              fontWeight: FontWeight.w600,
+              fontSize: 16,
+            ),
           ),
         ),
       ),

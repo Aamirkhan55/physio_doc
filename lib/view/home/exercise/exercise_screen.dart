@@ -56,28 +56,32 @@ class ExerciseScreen extends StatelessWidget {
               const SizedBox(height: 5),
               CustomSubExc(
                 onTap: () {} , 
-                title: 'Shoulder Girdle Exercises'
+                title: 'Shoulder Joint Exercises'
                 ),
                 const SizedBox(height: 5),
               CustomSubExc(
                 onTap: () {} , 
-                title: 'Shoulder Girdle Exercises'
+                title: 'Elbow Joint Exercises'
                 ),
                 const SizedBox(height: 5),
               CustomSubExc(
                 onTap: () {} , 
-                title: 'Shoulder Girdle Exercises'
+                title: 'Wrist Joint Exercises'
                 ),
                 const SizedBox(height: 5),
               CustomSubExc(
                 onTap: () {} , 
-                title: 'Shoulder Girdle Exercises'
+                title: 'Metacarpophalangeal Joint Ex.'
                 ),
                 const SizedBox(height: 5),
               CustomSubExc(
                 onTap: () {} , 
-                title: 'Shoulder Girdle Exercises'
+                title: 'Proximal Interphalangeal Joint Ex.'
                 ),
+              CustomSubExc(
+                onTap:() {} , 
+                title: 'Distal Interphalangeal Joint Ex.',
+                )  
         
             ],
           ),
