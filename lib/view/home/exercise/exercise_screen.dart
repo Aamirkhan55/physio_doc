@@ -34,7 +34,19 @@ class ExerciseScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            recentActitvities(),
+            RecentActitvities(),
+            SizedBox(height: 20),
+            Center(
+              child: Text(
+                'Exercises',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w400,
+                  color: txtColor,
+                ),
+                ),
+            )
+
           ],
         ),
       ),
