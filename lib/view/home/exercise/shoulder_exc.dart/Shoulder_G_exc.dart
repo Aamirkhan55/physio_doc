@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
+import 'package:physio_doc/widgets/custom_subEx_title.dart';
 
 class ShoulderGridleExc extends StatelessWidget {
   const ShoulderGridleExc({super.key});
@@ -22,11 +23,16 @@ class ShoulderGridleExc extends StatelessWidget {
     body: const Padding(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: 10),
             CustomSearchTextField(
               hintTitle: 'find exercise...',
             ),
+            SizedBox(height: 20),
+            CustomSubExTitle(
+              title: 'Shoulder Girdle Exercises',
+            ),    
         ],
       ),
       ),

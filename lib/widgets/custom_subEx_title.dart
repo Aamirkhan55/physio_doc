@@ -14,7 +14,7 @@ class CustomSubExTitle extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          width: 100,
+          width: 200,
           child: Text(
             title,
             style: const TextStyle(
