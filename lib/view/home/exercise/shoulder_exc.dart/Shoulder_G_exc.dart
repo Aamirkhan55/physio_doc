@@ -32,7 +32,8 @@ class ShoulderGridleExc extends StatelessWidget {
             SizedBox(height: 20),
             CustomSubExTitle(
               title: 'Shoulder Girdle Exercises',
-            ),    
+            ), 
+               
         ],
       ),
       ),
