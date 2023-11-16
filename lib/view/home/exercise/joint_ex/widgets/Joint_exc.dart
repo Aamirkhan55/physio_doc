@@ -189,7 +189,7 @@ class _CustomJointExcState extends State<CustomJointExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 100,
+                        width: 75,
                         child: Text(
                           "${gridMap.elementAt(index)['title']}",
                           style: const TextStyle(
