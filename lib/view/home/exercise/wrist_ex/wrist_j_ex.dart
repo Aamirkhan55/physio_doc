@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/home/exercise/wrist_ex/widgets/wrist_grid.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
 import 'package:physio_doc/widgets/custom_subEx_title.dart';
 
@@ -38,7 +39,7 @@ class WristJointExc extends StatelessWidget {
               height: 550,
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
-                child: WristJointExc(),
+                child: CustomWristExc(),
               ),
             ),
           ],
