@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/home/exercise/joint_ex/widgets/Joint_exc.dart';
-import 'package:physio_doc/view/home/exercise/shoulder_exc.dart/widgets/s_grid_exc.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
 import 'package:physio_doc/widgets/custom_subEx_title.dart';
 

@@ -5,6 +5,7 @@ import 'package:physio_doc/view/home/exercise/joint_ex/s_joint_ex.dart';
 import 'package:physio_doc/view/home/exercise/shoulder_exc.dart/Shoulder_G_exc.dart';
 import 'package:physio_doc/view/home/exercise/widgets/custom_subExc.dart';
 import 'package:physio_doc/view/home/exercise/widgets/recent_activity.dart';
+import 'package:physio_doc/view/home/exercise/wrist_ex/wrist_j_ex.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
 
 class ExerciseScreen extends StatelessWidget {
@@ -79,7 +80,9 @@ class ExerciseScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 5),
                 CustomSubExc(
-                onTap: () {} , 
+                onTap: () {
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => const WristJointExc()));
+                } , 
                 title: 'Wrist Joint Exercises'
                 ),
                 const SizedBox(height: 5),

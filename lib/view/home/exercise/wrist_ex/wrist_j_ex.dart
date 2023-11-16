@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
-import 'package:physio_doc/view/home/exercise/shoulder_exc.dart/widgets/s_grid_exc.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
 import 'package:physio_doc/widgets/custom_subEx_title.dart';
 
-class ShoulderGridleExc extends StatelessWidget {
-  const ShoulderGridleExc({super.key});
+class WristJointExc extends StatelessWidget {
+  const WristJointExc({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,16 +31,16 @@ class ShoulderGridleExc extends StatelessWidget {
             ),
             SizedBox(height: 20),
             CustomSubExTitle(
-              title: 'Shoulder Girdle Exercises',
+              title: 'Wrist Joint Exercises',
             ),
             SizedBox(height: 10),
             SizedBox(
-                height: 550,
-                child: SingleChildScrollView(
-                    scrollDirection: Axis.vertical, 
-                    child: CustomGridExc(),
-                    ),
-                    ),
+              height: 550,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: WristJointExc(),
+              ),
+            ),
           ],
         ),
       ),
