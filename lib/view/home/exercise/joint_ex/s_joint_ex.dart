@@ -32,7 +32,7 @@ class ShoulderJointExc extends StatelessWidget {
             ),
             SizedBox(height: 20),
             CustomSubExTitle(
-              title: 'Shoulder Girdle Exercises',
+              title: 'Shoulder Joint Exercises',
             ),
             SizedBox(height: 10),
             SizedBox(

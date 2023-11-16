@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/home/exercise/joint_ex/s_joint_ex.dart';
 import 'package:physio_doc/view/home/exercise/shoulder_exc.dart/Shoulder_G_exc.dart';
 import 'package:physio_doc/view/home/exercise/widgets/custom_subExc.dart';
 import 'package:physio_doc/view/home/exercise/widgets/recent_activity.dart';
@@ -63,7 +64,9 @@ class ExerciseScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 5),
                 CustomSubExc(
-                onTap: () {} , 
+                onTap: () {
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => const ShoulderJointExc() ));
+                } , 
                 title: 'Shoulder Joint Exercises'
                 ),
                 const SizedBox(height: 5),
