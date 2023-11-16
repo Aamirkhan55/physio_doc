@@ -216,8 +216,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        margin: const EdgeInsets.all(8.0),
+                      SizedBox(
                         child: Row(
                           children: [
                             Image.asset(
@@ -236,9 +235,12 @@ class _CustomGridExcState extends State<CustomGridExc> {
                         ),
                       ),
                       const SizedBox(width: 32),
-                      const Icon(
-                        Icons.arrow_circle_right_outlined,
-                        color: Colors.blue,
+                      InkWell(
+                        onTap: () {},
+                        child: const Icon(
+                          Icons.arrow_circle_right_outlined,
+                          color: Colors.blue,
+                        ),
                       )
                     ],
                   ),
