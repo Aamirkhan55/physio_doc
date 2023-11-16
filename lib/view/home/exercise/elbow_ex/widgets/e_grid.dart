@@ -1,151 +1,151 @@
 import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 
-class CustomJointExc extends StatefulWidget {
-  const CustomJointExc({
+class CustomElbowExc extends StatefulWidget {
+  const CustomElbowExc({
     super.key,
   });
 
   @override
-  State<CustomJointExc> createState() => _CustomJointExcState();
+  State<CustomElbowExc> createState() => _CustomElbowExcState();
 }
 
-class _CustomJointExcState extends State<CustomJointExc> {
+class _CustomElbowExcState extends State<CustomElbowExc> {
   final List<Map<String, dynamic>> gridMap = [
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
-      "image": "assets/Rectangle j0.png",
+      "title": "Elbow Joint Flexion Concentric Ex.",
+      "image": "assets/Rectangle s1.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "1",
     },
     {
-      "title": "Shoulder Joint Flextion  Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s2.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "2",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s3.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "3",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s4.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "4",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s5.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "4-5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s6.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s7.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s8.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s9.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s10.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s11.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s12.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s13.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s14.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s15.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s16.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s17.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s18.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s19.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s20.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s21.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s22.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Shoulder Joint Flextion Isometric Ex.",
+      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle s23.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
@@ -189,7 +189,7 @@ class _CustomJointExcState extends State<CustomJointExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 75,
+                        width: 100,
                         child: Text(
                           "${gridMap.elementAt(index)['title']}",
                           style: const TextStyle(
