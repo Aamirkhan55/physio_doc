@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomGridExc extends StatefulWidget {
-  final String? excTitle;
-  final String? exxImage;
-
-  const CustomGridExc({super.key, this.excTitle, this.exxImage});
+  const CustomGridExc({
+    super.key,
+  });
 
   @override
   State<CustomGridExc> createState() => _CustomGridExcState();
@@ -16,118 +15,140 @@ class _CustomGridExcState extends State<CustomGridExc> {
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s1.png",
-      "icon": "assets/Vector Ex.png",
-      "ex_Value" : "1"
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "1",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s2.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "2",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s3.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "3",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s4.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "4",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s5.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "4-5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s6.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s7.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s8.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s9.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s10.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s11.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s12.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s13.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s14.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s15.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s16.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s17.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s18.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s19.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s20.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s21.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s22.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s23.png",
-      "icon": "assets/Vector Ex.png",
+      "exicon": "assets/Vector Ex.png",
+      "ex_Value": "5",
     },
   ];
   @override
@@ -184,40 +205,46 @@ class _CustomGridExcState extends State<CustomGridExc> {
                         color: txtColor,
                       ),
                     ],
-                  ), 
+                  ),
                 ),
-               const SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Padding(
-                 padding: const EdgeInsets.symmetric(horizontal: 7,),
-                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(
-                      Icons.back_hand_outlined,
-                      color: Colors.red,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width: 25,
+                        height: 25,
+                        child: Row(
+                          children: [
+                            Image.asset(
+                              "${gridMap.elementAt(index)['exicon']}",
+                              
+                            ),
+                            const SizedBox(width: 5),
+                            Text(
+                              "${gridMap.elementAt(index)['ex_Value']}",
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.red,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    const SizedBox(width: 5),
-                    Text(
-                      '${index+1}',
-                      style: const TextStyle(
-                        fontSize: 16,
-                        color: Colors.red,
-                        fontWeight: FontWeight.w600, 
-                      ),
-                      ),
-                      ],
-                    ),
-                    const SizedBox(width: 32),  
-                    const Icon(
-                      Icons.arrow_circle_right_outlined,
-                      color: Colors.blue,
+                      const SizedBox(width: 32),
+                      const Icon(
+                        Icons.arrow_circle_right_outlined,
+                        color: Colors.blue,
                       )
-                  ],
-                 ),
-               )  
+                    ],
+                  ),
+                )
               ],
             ),
           );
