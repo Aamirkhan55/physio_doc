@@ -216,14 +216,12 @@ class _CustomGridExcState extends State<CustomGridExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        width: 25,
-                        height: 25,
+                      Container(
+                        margin: const EdgeInsets.all(8.0),
                         child: Row(
                           children: [
                             Image.asset(
                               "${gridMap.elementAt(index)['exicon']}",
-                              
                             ),
                             const SizedBox(width: 5),
                             Text(
