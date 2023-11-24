@@ -4,6 +4,7 @@ import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/home/exercise/elbow_ex/elbow_ex.dart';
 import 'package:physio_doc/view/home/exercise/joint_ex/s_joint_ex.dart';
 import 'package:physio_doc/view/home/exercise/meta_joint_exc/meta_joint.dart';
+import 'package:physio_doc/view/home/exercise/proximal-joint/proximal_ex.dart';
 import 'package:physio_doc/view/home/exercise/shoulder_exc.dart/Shoulder_G_exc.dart';
 import 'package:physio_doc/view/home/exercise/widgets/custom_subExc.dart';
 import 'package:physio_doc/view/home/exercise/widgets/recent_activity.dart';
@@ -95,7 +96,9 @@ class ExerciseScreen extends StatelessWidget {
                 ),
                  SizedBox(height: 5.h),
                 CustomSubExc(
-                onTap: () {} , 
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ProJointExc()));
+                } , 
                 title: 'Proximal Interphalangeal Joint Ex.'
                 ),
                 CustomSubExc(

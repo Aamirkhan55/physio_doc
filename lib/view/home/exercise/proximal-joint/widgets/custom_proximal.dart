@@ -2,84 +2,53 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
-class CustomMetaJointExc extends StatefulWidget {
-  const CustomMetaJointExc({
+class CustomProJointExc extends StatefulWidget {
+  const CustomProJointExc({
     super.key,
   });
 
   @override
-  State<CustomMetaJointExc> createState() => _CustomMetaJointExcState();
+  State<CustomProJointExc> createState() => _CustomProJointExcState();
 }
 
-class _CustomMetaJointExcState extends State<CustomMetaJointExc> {
+class _CustomProJointExcState extends State<CustomProJointExc> {
   final List<Map<String, dynamic>> gridMap = [
     {
-      "title": "MCP Joint Flexion Isometric Ex.",
-      "image": "assets/Rectangle m1.png",
+      "title": "PIP Joint Extension Isometric Ex.",
+      "image": "assets/Rectangle p1.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "1",
     },
     {
-      "title": "MCP Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle m2.png",
+      "title": "PIP Joint Extension Concentric Ex.",
+      "image": "assets/Rectangle p2.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "2",
     },
     {
-      "title": "MCP Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle m3.png",
+      "title": "PIP Joint ExtensionConcentric Ex.",
+      "image": "assets/Rectangle p3.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "3",
     },
     {
-      "title": "MCP Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle m4.png",
+      "title": "PIP Joint ExtensionConcentric Ex.",
+      "image": "assets/Rectangle p4.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "4",
     },
     {
-      "title": "MCP Joint Flexion Eccentric Ex.",
-      "image": "assets/Rectangle m5.png",
+      "title": "PIP Joint Extension Eccentric Ex.",
+      "image": "assets/Rectangle p5.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "4-5",
     },
     {
-      "title": "MCP Joint Flexion Eccentric Ex.",
-      "image": "assets/Rectangle m6.png",
+      "title": "PIP Joint Extension Eccentric Ex.",
+      "image": "assets/Rectangle p6.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
-    },
-    {
-      "title": "MCP Joint Abduction Isometric Ex.",
-      "image": "assets/Rectangle m7.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "MCP Joint Abduction Concentric Ex.",
-      "image": "assets/Rectangle m8.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "MCP Joint AbductionConcentric Ex.",
-      "image": "assets/Rectangle m9.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "MCP Joint Abduction Concentric Ex.",
-      "image": "assets/Rectangle m10.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "MCP Joint Abduction Eccentric Ex.",
-      "image": "assets/Rectangle m11.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-  
+    }, 
   ];
   @override
   Widget build(BuildContext context) {
