@@ -36,9 +36,8 @@ class WristJointExc extends StatelessWidget {
               title: 'Wrist Joint Exercises',
             ),
              SizedBox(height: 10.h),
-            SizedBox(
-              height: 580.h,
-              child:const SingleChildScrollView(
+            const Expanded(
+              child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: CustomWristExc(),
               ),

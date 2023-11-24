@@ -20,7 +20,7 @@ class CustomSubExc extends StatelessWidget {
       child: Container(
         width: 326.w,
         height: 55.h,
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(5.0),
         margin: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
           color: subExcClr,
