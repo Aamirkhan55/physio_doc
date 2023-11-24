@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class RecentActitvities extends StatelessWidget {
@@ -23,7 +24,7 @@ class RecentActitvities extends StatelessWidget {
     ];
 
     return SizedBox(
-      height: 83,
+      height: 83.h,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
@@ -32,11 +33,11 @@ class RecentActitvities extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                width: 230,
-                height: 83,
+                width: 230.w,
+                height: 83.h,
                 decoration: BoxDecoration(
                   color: conBgClr,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(20.r),
                 ),
                 child: Column(
                   children: [
@@ -44,10 +45,10 @@ class RecentActitvities extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 100,
-                          height: 65,
+                          width: 100.w,
+                          height: 65.h,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30)),
+                              borderRadius: BorderRadius.circular(30.r)),
                           child: Image.asset(
                             recentList[index].imageUrl!,
                             fit: BoxFit.cover,
@@ -59,7 +60,7 @@ class RecentActitvities extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SizedBox(
-                                width: 100,
+                                width: 100.w,
                                 child: Text(
                                   recentList[index].title!,
                                   style: const TextStyle(

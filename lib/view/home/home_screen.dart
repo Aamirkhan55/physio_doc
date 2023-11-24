@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/home/exercise/exercise_screen.dart';
 import 'package:physio_doc/view/home/widgets/custom_darwer.dart';
@@ -29,14 +30,14 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 30),
+             SizedBox(height: 30.h),
             Center(
               child: Image.asset(
                 'assets/Group 3.png',
-                height: 166,
-                width: 155,
+                height: 166.h,
+                width: 155.w,
                 )),
-            const SizedBox(height: 40),  
+             SizedBox(height: 40.h),  
              CustomExcField(
                title:  'Exercise' ,
                onTap: () {
@@ -51,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               title: 'Injuries' ,
               onTap: () {},
               ), 
-              const SizedBox(height: 30),  
+             SizedBox(height: 30.h),  
              CustomExcField(
               title: 'Accessories' ,
               onTap: () {},

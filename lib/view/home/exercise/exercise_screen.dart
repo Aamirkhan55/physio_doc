@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/home/exercise/elbow_ex/elbow_ex.dart';
 import 'package:physio_doc/view/home/exercise/joint_ex/s_joint_ex.dart';
@@ -26,11 +27,11 @@ class ExerciseScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 10),
+            SizedBox(height: 10.h),
             const CustomSearchTextField(
               hintTitle: 'find exercise...',
             ),
-            const SizedBox(height: 15),
+             SizedBox(height: 15.h),
             const Text(
               'Recent Activities',
               style: TextStyle(
@@ -38,9 +39,9 @@ class ExerciseScreen extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 10.h),
             const RecentActitvities(),
-            const SizedBox(height: 20),
+             SizedBox(height: 10.h),
             const Center(
               child: Text(
                 'Exercises',
@@ -51,9 +52,9 @@ class ExerciseScreen extends StatelessWidget {
                 ),
                 ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: 10.h),
             SizedBox(
-              height: 430,
+              height: 430.h,
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: Column(
@@ -64,33 +65,33 @@ class ExerciseScreen extends StatelessWidget {
                 } , 
                 title: 'Shoulder Girdle Exercises'
                 ),
-                const SizedBox(height: 5),
+                SizedBox(height: 5.h),
                 CustomSubExc(
                 onTap: () {
                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ShoulderJointExc() ));
                 } , 
                 title: 'Shoulder Joint Exercises'
                 ),
-                const SizedBox(height: 5),
+                SizedBox(height: 5.h),
                 CustomSubExc(
                 onTap: () {
                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ElbowJointExc() ));
                 } , 
                 title: 'Elbow Joint Exercises'
                 ),
-                const SizedBox(height: 5),
+                 SizedBox(height: 5.h),
                 CustomSubExc(
                 onTap: () {
                    Navigator.push(context, MaterialPageRoute(builder: (context) => const WristJointExc()));
                 } , 
                 title: 'Wrist Joint Exercises'
                 ),
-                const SizedBox(height: 5),
+               SizedBox(height: 5.h),
                 CustomSubExc(
                 onTap: () {} , 
                 title: 'Metacarpophalangeal Joint Ex.'
                 ),
-                const SizedBox(height: 5),
+                 SizedBox(height: 5.h),
                 CustomSubExc(
                 onTap: () {} , 
                 title: 'Proximal Interphalangeal Joint Ex.'
@@ -102,9 +103,7 @@ class ExerciseScreen extends StatelessWidget {
                   ],
                 ),
               ),
-            )
-             
-        
+            ),
           ],
         ),
       ),

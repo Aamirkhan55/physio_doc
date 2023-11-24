@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/auth/login/login.dart';
 import 'package:physio_doc/view/auth/login/widgets/custom_textform.dart';
@@ -22,32 +23,32 @@ class _SignUpState extends State<SignUp> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 60),
+              SizedBox(height: 60.h),
               const CustomTitle(
                 title: 'Sign up',
               ),
-              const SizedBox(height: 30),
+               SizedBox(height: 30.h),
               const CustomTextField(
                 hintText: 'first name',
                 hintColor: hintColor,
               ),
-              const SizedBox(height: 20),
+               SizedBox(height: 20.h),
               const CustomTextField(
                 hintText: 'last name',
                 hintColor: hintColor,
               ),
-              const SizedBox(height: 20),
+               SizedBox(height: 20.h),
               const CustomTextField(
                 hintText: 'email',
                 hintColor: hintColor,
               ),
-              const SizedBox(height: 20),
+               SizedBox(height: 20.h),
               const CustomTextField(
                 hintText: 'password',
                 hintColor: hintColor,
                 isPassword: true,
               ),
-              const SizedBox(height: 50),
+               SizedBox(height: 50.h),
               CustomButton(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Login()));
@@ -55,7 +56,7 @@ class _SignUpState extends State<SignUp> {
                 title: 'Signup',
                 color: buttonClr,
               ),
-              const SizedBox(height: 40),
+               SizedBox(height: 40.h),
               Column(
                 children: [
                   const Center(
@@ -68,7 +69,7 @@ class _SignUpState extends State<SignUp> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 40),
+                   SizedBox(height: 40.h),
                   Image.asset('assets/Group 16.png'),
                 ],
               ),

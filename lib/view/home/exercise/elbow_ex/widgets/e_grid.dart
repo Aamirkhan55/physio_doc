@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomElbowExc extends StatefulWidget {
@@ -148,10 +149,10 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
             child: Column(
               children: [
                 Container(
-                  width: 200,
-                  height: 170,
+                  width: 200.w,
+                  height: 150.h,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
                     "${gridMap.elementAt(index)['image']}",
@@ -165,7 +166,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 85,
+                        width: 85.w,
                         child: Text(
                           "${gridMap.elementAt(index)['title']}",
                           style: const TextStyle(
@@ -183,7 +184,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 10),
+                 SizedBox(height: 10.h),
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
@@ -198,7 +199,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                             Image.asset(
                               "${gridMap.elementAt(index)['exicon']}",
                             ),
-                            const SizedBox(width: 5),
+                             SizedBox(width: 5.w),
                             Text(
                               "${gridMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
@@ -210,7 +211,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                           ],
                         ),
                       ),
-                      const SizedBox(width: 32),
+                      SizedBox(width: 32.w),
                       InkWell(
                         onTap: () {},
                         child: const Icon(

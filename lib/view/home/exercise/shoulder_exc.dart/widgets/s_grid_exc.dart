@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomGridExc extends StatefulWidget {
@@ -167,15 +168,15 @@ class _CustomGridExcState extends State<CustomGridExc> {
           return Container(
             decoration: BoxDecoration(
               color: buttonClr.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(15.r),
             ),
             child: Column(
               children: [
                 Container(
-                  width: 200,
-                  height: 170,
+                  width: 200.w,
+                  height: 150.h,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
                     "${gridMap.elementAt(index)['image']}",
@@ -189,7 +190,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 100,
+                        width: 100.w,
                         child: Text(
                           "${gridMap.elementAt(index)['title']}",
                           style: const TextStyle(
@@ -207,7 +208,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 25.h),
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
@@ -222,7 +223,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                             Image.asset(
                               "${gridMap.elementAt(index)['exicon']}",
                             ),
-                            const SizedBox(width: 5),
+                             SizedBox(width: 5.w),
                             Text(
                               "${gridMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
@@ -234,7 +235,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                           ],
                         ),
                       ),
-                      const SizedBox(width: 32),
+                      SizedBox(width: 32.w),
                       InkWell(
                         onTap: () {},
                         child: const Icon(

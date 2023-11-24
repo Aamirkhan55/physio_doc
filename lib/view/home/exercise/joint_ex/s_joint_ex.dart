@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/home/exercise/joint_ex/widgets/Joint_exc.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
@@ -21,23 +22,23 @@ class ShoulderJointExc extends StatelessWidget {
           ),
         ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      body:  Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10),
-            CustomSearchTextField(
+            SizedBox(height: 10.h),
+            const CustomSearchTextField(
               hintTitle: 'find exercise...',
             ),
-            SizedBox(height: 20),
-            CustomSubExTitle(
+             SizedBox(height: 20.h),
+            const CustomSubExTitle(
               title: 'Shoulder Joint Exercises',
             ),
-            SizedBox(height: 10),
-            SizedBox(
-                height: 550,
-                child: SingleChildScrollView(
+             SizedBox(height: 10.h),
+             SizedBox(
+                height: 550.h,
+                child: const SingleChildScrollView(
                     scrollDirection: Axis.vertical, 
                     child: CustomJointExc(),
                     ),

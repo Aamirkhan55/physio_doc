@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomSubExc extends StatelessWidget {
@@ -17,13 +18,13 @@ class CustomSubExc extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 326,
-        height: 55,
+        width: 326.w,
+        height: 55.h,
         padding: const EdgeInsets.all(8.0),
         margin: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
           color: subExcClr,
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(15.r),
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),

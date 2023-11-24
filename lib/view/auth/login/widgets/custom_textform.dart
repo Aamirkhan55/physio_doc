@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomTextField extends StatefulWidget {
@@ -8,12 +9,12 @@ class CustomTextField extends StatefulWidget {
   final Color hintColor;
 
   const CustomTextField({
-    Key? key,
+    super.key,
     required this.hintText,
     this.isPassword = false,
     this.textColor = Colors.black,
     this.hintColor = Colors.grey,
-  }) : super(key: key);
+  });
 
   @override
   _CustomTextFieldState createState() => _CustomTextFieldState();
@@ -38,10 +39,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 310,
-      height: 60,
+      width: 310.w,
+      height: 60.h,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(15.0.r),
         color: buttonClr.withOpacity(0.4),
       ),
       child: Padding(

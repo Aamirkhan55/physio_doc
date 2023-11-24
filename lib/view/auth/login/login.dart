@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 import 'package:physio_doc/view/auth/login/widgets/custom_textform.dart';
 import 'package:physio_doc/view/home/home_screen.dart';
@@ -17,31 +18,31 @@ class Login extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 90),
+              SizedBox(height: 90.h),
               const CustomTitle(title: 'Login'),
-              const SizedBox(height: 50),
+              SizedBox(height: 50.h),
                const CustomTextField(
                 hintText: 'email',
                 hintColor: hintColor,
                 ),
-              const SizedBox(height: 20),  
+              SizedBox(height: 20.h),  
                const CustomTextField(
                 hintText: 'password',
                 hintColor: hintColor,
                 isPassword: true,
                 ),
-              const SizedBox(height: 20),
+               SizedBox(height: 20.h),
               Row(
                 children: [
                 Container(
-                  width: 20,
-                  height: 20,
+                  width: 20.w,
+                  height: 20.h,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
+                    borderRadius: BorderRadius.circular(50.r),
                     color: buttonClr.withOpacity(0.5),
                   ),
                 ),
-                const SizedBox(width: 5),
+                SizedBox(width: 5.w),
                const Text(
                 'Remember me',
                 style: TextStyle(
@@ -50,7 +51,7 @@ class Login extends StatelessWidget {
                   fontWeight: FontWeight.w400
                 ),
                 ),
-                const SizedBox(width: 50),
+                SizedBox(width: 50.w),
                 const Text(
                 'Forgot Password',
                 style: TextStyle(
@@ -61,7 +62,7 @@ class Login extends StatelessWidget {
                 ),
               ],
               ),
-              const SizedBox(height: 60),
+               SizedBox(height: 60.h),
               CustomButton(
                 onTap: () {
                    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
@@ -69,7 +70,7 @@ class Login extends StatelessWidget {
                 title: 'Login', 
                 color: buttonClr,
                 ),
-              const SizedBox(height: 50),
+               SizedBox(height: 50.h),
               Column(
                 children: [
                    const Center(
@@ -82,7 +83,7 @@ class Login extends StatelessWidget {
                  ), 
                   ),
               ),
-             const SizedBox(height: 50),
+             SizedBox(height: 50.h),
              Image.asset('assets/Group 16.png'),  
                 ],
               ),   
