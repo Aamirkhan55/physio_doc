@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomSearchTextField extends StatelessWidget {
@@ -14,7 +15,7 @@ class CustomSearchTextField extends StatelessWidget {
         border: Border.all(
           color: buttonClr.withOpacity(0.1),
         ),
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(15.0.r),
       ),
       child: Row(
         children: [
@@ -23,7 +24,7 @@ class CustomSearchTextField extends StatelessWidget {
             color: greyColor,
             size: 35,
           ),
-          const SizedBox(width: 8.0),
+           SizedBox(width: 8.w),
           Expanded(
             child: TextField(
               decoration: InputDecoration(

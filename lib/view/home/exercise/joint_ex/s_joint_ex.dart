@@ -36,13 +36,12 @@ class ShoulderJointExc extends StatelessWidget {
               title: 'Shoulder Joint Exercises',
             ),
              SizedBox(height: 10.h),
-             SizedBox(
-                height: 550.h,
-                child: const SingleChildScrollView(
-                    scrollDirection: Axis.vertical, 
-                    child: CustomJointExc(),
-                    ),
-                    ),
+             const Expanded(
+               child: SingleChildScrollView(
+                   scrollDirection: Axis.vertical, 
+                   child: CustomJointExc(),
+                   ),
+             ),
           ],
         ),
       ),

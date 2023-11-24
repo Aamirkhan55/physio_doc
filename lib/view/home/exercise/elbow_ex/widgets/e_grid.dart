@@ -69,12 +69,6 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
     },
     {
       "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e9.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle e10.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
@@ -127,6 +121,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
+  
   ];
   @override
   Widget build(BuildContext context) {
@@ -156,7 +151,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                   ),
                   child: Image.asset(
                     "${gridMap.elementAt(index)['image']}",
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
                 Padding(
@@ -184,7 +179,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     ],
                   ),
                 ),
-                 SizedBox(height: 10.h),
+                 SizedBox(height: 25.h),
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,

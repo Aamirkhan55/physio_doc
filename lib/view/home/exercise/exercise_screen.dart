@@ -53,8 +53,7 @@ class ExerciseScreen extends StatelessWidget {
                 ),
             ),
             SizedBox(height: 10.h),
-            SizedBox(
-              height: 430.h,
+            Expanded(
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: Column(

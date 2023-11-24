@@ -180,7 +180,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                   ),
                   child: Image.asset(
                     "${gridMap.elementAt(index)['image']}",
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
                 Padding(

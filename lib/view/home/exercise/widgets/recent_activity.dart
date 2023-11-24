@@ -24,7 +24,7 @@ class RecentActitvities extends StatelessWidget {
     ];
 
     return SizedBox(
-      height: 83.h,
+      height: 88.h,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,

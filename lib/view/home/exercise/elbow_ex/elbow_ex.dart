@@ -36,9 +36,8 @@ class ElbowJointExc extends StatelessWidget {
               title: 'Elbow Joint Exercises',
             ),
            SizedBox(height: 10.h),
-            SizedBox(
-              height: 550.h,
-              child: const SingleChildScrollView(
+            const Expanded(
+              child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: CustomElbowExc(),
               ),

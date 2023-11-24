@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
 class CustomSubExTitle extends StatelessWidget {
@@ -14,7 +15,7 @@ class CustomSubExTitle extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          width: 200,
+          width: 200.w,
           child: Text(
             title,
             style: const TextStyle(

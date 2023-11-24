@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTitle extends StatelessWidget {
   final String title;
@@ -22,7 +23,7 @@ class CustomTitle extends StatelessWidget {
         ),
         Image.asset(
           'assets/nlogo.png',
-          width: 160,
+          width: 160.w,
         ),
       ],
     );

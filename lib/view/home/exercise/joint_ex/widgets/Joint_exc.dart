@@ -180,7 +180,7 @@ class _CustomJointExcState extends State<CustomJointExc> {
                   ),
                   child: Image.asset(
                     "${gridMap.elementAt(index)['image']}",
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
                 Padding(
