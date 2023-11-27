@@ -2,132 +2,65 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
-class CustomElbowExc extends StatefulWidget {
-  const CustomElbowExc({
+class CustomImproveEx extends StatefulWidget {
+  const CustomImproveEx({
     super.key,
   });
 
   @override
-  State<CustomElbowExc> createState() => _CustomElbowExcState();
+  State<CustomImproveEx> createState() => _CustomImproveExState();
 }
 
-class _CustomElbowExcState extends State<CustomElbowExc> {
-  final List<Map<String, dynamic>> elbowMap = [
+class _CustomImproveExState extends State<CustomImproveEx> {
+  final List<Map<String, dynamic>> imeExMap = [
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e0.png",
+      "title": "Improve Manipulation Without Tools Ex.",
+      "image": "assets/Rectangle im1.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "1",
     },
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e1.png",
+      "title": "Improve Manipulation Without Tools Ex.",
+      "image": "assets/Rectangle im2.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "2",
     },
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e2.png",
+      "title": "CMC Joint Extension Concentric Ex.",
+      "image": "assets/Rectangle im3.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "3",
     },
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e3.png",
+      "title": "Improve Manipulation Without Tools Ex.",
+      "image": "assets/Rectangle im4.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "4",
     },
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e4.png",
+      "title": "Improve Manipulation Without Tools Ex.",
+      "image": "assets/Rectangle im5.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "4-5",
     },
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e5.png",
+      "title": "Improve Manipulation Without Tools Ex.",
+      "image": "assets/Rectangle im6.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
     },
     {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e6.png",
+      "title": "Improve Manipulation Without Tools Ex.",
+      "image": "assets/Rectangle im7.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e7.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e8.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e10.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e11.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e12.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e13.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e14.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e15.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e16.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e17.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-    {
-      "title": "Elbow Joint Flexion Concentric Ex.",
-      "image": "assets/Rectangle e18.png",
-      "exicon": "assets/Vector Ex.png",
-      "ex_Value": "5",
-    },
-  
+    }, 
   ];
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: elbowMap.length,
+        itemCount: imeExMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -139,7 +72,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
           return Container(
             decoration: BoxDecoration(
               color: buttonClr.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(15.r),
             ),
             child: Column(
               children: [
@@ -150,7 +83,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${elbowMap.elementAt(index)['image']}",
+                    "${imeExMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -161,9 +94,9 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 85.w,
+                        width: 70.w,
                         child: Text(
-                          "${elbowMap.elementAt(index)['title']}",
+                          "${imeExMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -179,7 +112,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     ],
                   ),
                 ),
-                 SizedBox(height: 25.h),
+               SizedBox(height: 10.h),
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
@@ -192,11 +125,11 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${elbowMap.elementAt(index)['exicon']}",
+                              "${imeExMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${elbowMap.elementAt(index)['ex_Value']}",
+                              "${imeExMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,
@@ -206,7 +139,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                           ],
                         ),
                       ),
-                      SizedBox(width: 32.w),
+                       SizedBox(width: 32.w),
                       InkWell(
                         onTap: () {},
                         child: const Icon(

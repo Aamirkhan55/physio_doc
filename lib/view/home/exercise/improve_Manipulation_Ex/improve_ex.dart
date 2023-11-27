@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
-import 'package:physio_doc/view/home/exercise/carpometacarpal_ex/widgets/custom_carpo.dart';
+import 'package:physio_doc/view/home/exercise/improve_Manipulation_Ex/widgets/custom_improve.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
 import 'package:physio_doc/widgets/custom_subEx_title.dart';
 
-class CarpoJointExc extends StatelessWidget {
-  const CarpoJointExc({super.key});
+class ImproveJointExc extends StatelessWidget {
+  const ImproveJointExc({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +33,13 @@ class CarpoJointExc extends StatelessWidget {
             ),
              SizedBox(height: 20.h),
             const CustomSubExTitle(
-              title: 'Carpometacarpal joints (CMC Joints) Exercises',
+              title: 'Improve Manipulation Exercises',
             ),
              SizedBox(height: 10.h),
              const Expanded(
                child: SingleChildScrollView(
                    scrollDirection: Axis.vertical, 
-                   child: CustomCMSJointExc(),
+                   child: CustomImproveEx(),
                    ),
              ),
           ],
