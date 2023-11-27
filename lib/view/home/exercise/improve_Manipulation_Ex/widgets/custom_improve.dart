@@ -26,7 +26,7 @@ class _CustomImproveExState extends State<CustomImproveEx> {
       "ex_Value": "2",
     },
     {
-      "title": "CMC Joint Extension Concentric Ex.",
+      "title": "Improve Manipulation Without Tools Ex.",
       "image": "assets/Rectangle im3.png",
       "exicon": "assets/Vector Ex.png",
       "ex_Value": "3",
