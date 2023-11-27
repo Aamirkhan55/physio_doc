@@ -12,7 +12,7 @@ class CustomProJointExc extends StatefulWidget {
 }
 
 class _CustomProJointExcState extends State<CustomProJointExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> proJointMap = [
     {
       "title": "PIP Joint Extension Isometric Ex.",
       "image": "assets/Rectangle p1.png",
@@ -54,7 +54,7 @@ class _CustomProJointExcState extends State<CustomProJointExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: proJointMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -77,7 +77,7 @@ class _CustomProJointExcState extends State<CustomProJointExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${proJointMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -90,7 +90,7 @@ class _CustomProJointExcState extends State<CustomProJointExc> {
                       SizedBox(
                         width: 75.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${proJointMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -119,11 +119,11 @@ class _CustomProJointExcState extends State<CustomProJointExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${proJointMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${proJointMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,

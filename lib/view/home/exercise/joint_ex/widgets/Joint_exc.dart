@@ -12,7 +12,7 @@ class CustomJointExc extends StatefulWidget {
 }
 
 class _CustomJointExcState extends State<CustomJointExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> joinExtMap = [
     {
       "title": "Shoulder Joint Flextion Isometric Ex.",
       "image": "assets/Rectangle j0.png",
@@ -156,7 +156,7 @@ class _CustomJointExcState extends State<CustomJointExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: joinExtMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -179,7 +179,7 @@ class _CustomJointExcState extends State<CustomJointExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${joinExtMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -192,7 +192,7 @@ class _CustomJointExcState extends State<CustomJointExc> {
                       SizedBox(
                         width: 75.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${joinExtMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -221,11 +221,11 @@ class _CustomJointExcState extends State<CustomJointExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${joinExtMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${joinExtMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,

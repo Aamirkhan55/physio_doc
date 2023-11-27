@@ -12,7 +12,7 @@ class CustomMetaJointExc extends StatefulWidget {
 }
 
 class _CustomMetaJointExcState extends State<CustomMetaJointExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> metaJointMap = [
     {
       "title": "MCP Joint Flexion Isometric Ex.",
       "image": "assets/Rectangle m1.png",
@@ -85,7 +85,7 @@ class _CustomMetaJointExcState extends State<CustomMetaJointExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: metaJointMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -108,7 +108,7 @@ class _CustomMetaJointExcState extends State<CustomMetaJointExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${metaJointMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -121,7 +121,7 @@ class _CustomMetaJointExcState extends State<CustomMetaJointExc> {
                       SizedBox(
                         width: 75.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${metaJointMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -150,11 +150,11 @@ class _CustomMetaJointExcState extends State<CustomMetaJointExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${metaJointMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${metaJointMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,

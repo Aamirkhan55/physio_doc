@@ -12,7 +12,7 @@ class CustomDistJointExc extends StatefulWidget {
 }
 
 class _CustomDistJointExcState extends State<CustomDistJointExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> distalExMap = [
     {
       "title": "DIP Joint Flexion Isometric Ex.",
       "image": "assets/Rectangle d1.png",
@@ -54,7 +54,7 @@ class _CustomDistJointExcState extends State<CustomDistJointExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: distalExMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -77,7 +77,7 @@ class _CustomDistJointExcState extends State<CustomDistJointExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${distalExMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -90,7 +90,7 @@ class _CustomDistJointExcState extends State<CustomDistJointExc> {
                       SizedBox(
                         width: 70.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${distalExMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -119,11 +119,11 @@ class _CustomDistJointExcState extends State<CustomDistJointExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${distalExMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${distalExMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,

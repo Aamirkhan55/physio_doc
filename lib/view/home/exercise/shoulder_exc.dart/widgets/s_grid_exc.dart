@@ -12,7 +12,7 @@ class CustomGridExc extends StatefulWidget {
 }
 
 class _CustomGridExcState extends State<CustomGridExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> shoulderExMap = [
     {
       "title": "Shoulder Girdle Depression Isometric Ex.",
       "image": "assets/Rectangle s1.png",
@@ -156,7 +156,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: shoulderExMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -179,7 +179,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${shoulderExMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -192,7 +192,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                       SizedBox(
                         width: 100.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${shoulderExMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -221,11 +221,11 @@ class _CustomGridExcState extends State<CustomGridExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${shoulderExMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${shoulderExMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,

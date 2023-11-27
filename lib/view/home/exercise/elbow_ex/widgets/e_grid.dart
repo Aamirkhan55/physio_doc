@@ -12,7 +12,7 @@ class CustomElbowExc extends StatefulWidget {
 }
 
 class _CustomElbowExcState extends State<CustomElbowExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> gridElbowMap = [
     {
       "title": "Elbow Joint Flexion Concentric Ex.",
       "image": "assets/Rectangle e0.png",
@@ -127,7 +127,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: gridElbowMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -150,7 +150,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${gridElbowMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -163,7 +163,7 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                       SizedBox(
                         width: 85.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${gridElbowMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -192,11 +192,11 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${gridElbowMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${gridElbowMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,

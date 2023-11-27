@@ -12,7 +12,7 @@ class CustomWristExc extends StatefulWidget {
 }
 
 class _CustomWristExcState extends State<CustomWristExc> {
-  final List<Map<String, dynamic>> gridMap = [
+  final List<Map<String, dynamic>> wristExMap = [
     {
       "title": "Wrist Joint Flexion Isometric Ex.",
       "image": "assets/Rectangle w0.png",
@@ -150,7 +150,7 @@ class _CustomWristExcState extends State<CustomWristExc> {
   Widget build(BuildContext context) {
     return GridView.builder(
         shrinkWrap: true,
-        itemCount: gridMap.length,
+        itemCount: wristExMap.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -173,7 +173,7 @@ class _CustomWristExcState extends State<CustomWristExc> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Image.asset(
-                    "${gridMap.elementAt(index)['image']}",
+                    "${wristExMap.elementAt(index)['image']}",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -186,7 +186,7 @@ class _CustomWristExcState extends State<CustomWristExc> {
                       SizedBox(
                         width: 100.w,
                         child: Text(
-                          "${gridMap.elementAt(index)['title']}",
+                          "${wristExMap.elementAt(index)['title']}",
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -215,11 +215,11 @@ class _CustomWristExcState extends State<CustomWristExc> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "${gridMap.elementAt(index)['exicon']}",
+                              "${wristExMap.elementAt(index)['exicon']}",
                             ),
                              SizedBox(width: 5.w),
                             Text(
-                              "${gridMap.elementAt(index)['ex_Value']}",
+                              "${wristExMap.elementAt(index)['ex_Value']}",
                               style: const TextStyle(
                                 fontSize: 16,
                                 color: Colors.red,
