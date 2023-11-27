@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
-class CustomProJointExc extends StatefulWidget {
-  const CustomProJointExc({
+class CustomDistJointExc extends StatefulWidget {
+  const CustomDistJointExc({
     super.key,
   });
 
   @override
-  State<CustomProJointExc> createState() => _CustomProJointExcState();
+  State<CustomDistJointExc> createState() => _CustomDistJointExcState();
 }
 
-class _CustomProJointExcState extends State<CustomProJointExc> {
+class _CustomDistJointExcState extends State<CustomDistJointExc> {
   final List<Map<String, dynamic>> gridMap = [
     {
       "title": "DIP Joint Flexion Isometric Ex.",
@@ -88,7 +88,7 @@ class _CustomProJointExcState extends State<CustomProJointExc> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 75.w,
+                        width: 70.w,
                         child: Text(
                           "${gridMap.elementAt(index)['title']}",
                           style: const TextStyle(

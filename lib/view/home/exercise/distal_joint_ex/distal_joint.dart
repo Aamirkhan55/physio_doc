@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
-import 'package:physio_doc/view/home/exercise/proximal-joint/widgets/custom_proximal.dart';
+import 'package:physio_doc/view/home/exercise/distal_joint_ex/widgets/custom_distal.dart';
 import 'package:physio_doc/widgets/custom_searchBar.dart';
 import 'package:physio_doc/widgets/custom_subEx_title.dart';
 
@@ -39,7 +39,7 @@ class DistalJointExc extends StatelessWidget {
              const Expanded(
                child: SingleChildScrollView(
                    scrollDirection: Axis.vertical, 
-                   child: CustomProJointExc(),
+                   child: CustomDistJointExc(),
                    ),
              ),
           ],

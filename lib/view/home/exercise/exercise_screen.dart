@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:physio_doc/view/home/exercise/distal_joint_ex/distal_joint.dart';
 import 'package:physio_doc/view/home/exercise/elbow_ex/elbow_ex.dart';
 import 'package:physio_doc/view/home/exercise/joint_ex/s_joint_ex.dart';
 import 'package:physio_doc/view/home/exercise/meta_joint_exc/meta_joint.dart';
@@ -102,9 +103,19 @@ class ExerciseScreen extends StatelessWidget {
                 title: 'Proximal Interphalangeal Joint Ex.'
                 ),
                 CustomSubExc(
-                onTap:() {} , 
+                onTap:() {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const DistalJointExc() ));
+                } , 
                 title: 'Distal Interphalangeal Joint Ex.',
-                ) 
+                ),
+                CustomSubExc(
+                onTap:() {} , 
+                title: 'Carpometacarpal Joints (CMC Joints) Ex.',
+                ),
+                CustomSubExc(
+                onTap:() {} , 
+                title: 'Improve Manipulation Exercises',
+                ),
                   ],
                 ),
               ),
