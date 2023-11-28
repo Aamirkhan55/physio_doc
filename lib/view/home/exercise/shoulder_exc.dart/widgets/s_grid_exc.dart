@@ -156,34 +156,22 @@ class _CustomGridExcState extends State<CustomGridExc> {
     },
   ];
 
-  late List<FavoriteItemModel>
-      itemModels; // List to store individual models for each item
-
-  @override
-  void initState() {
-    super.initState();
-
-    // Initialize item models with default values
-    itemModels =
-        List.generate(shoulderExMap.length, (index) => FavoriteItemModel());
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Consumer<FavoriteItemModel>(
-      builder: (context, model, child) => GridView.builder(
-          shrinkWrap: true,
-          itemCount: shoulderExMap.length,
-          physics: const NeverScrollableScrollPhysics(),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 10.0,
-            mainAxisSpacing: 10.0,
-            mainAxisExtent: 270,
-          ),
-          itemBuilder: (context, index) {
-            FavoriteItemModel itemModel = itemModels[index];
-            return Container(
+    // final favoriteItemProvider = Provider.of<FavoriteItemModel>(context);
+    return GridView.builder(
+        shrinkWrap: true,
+        itemCount: shoulderExMap.length,
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 10.0,
+          mainAxisSpacing: 10.0,
+          mainAxisExtent: 270,
+        ),
+        itemBuilder: (context, index) {
+          return Consumer<FavoriteItemModel>(
+            builder: (context, value, child) => Container(
               decoration: BoxDecoration(
                 color: buttonClr.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(15.r),
@@ -220,14 +208,14 @@ class _CustomGridExcState extends State<CustomGridExc> {
                         ),
                         IconButton(
                           onPressed: () {
-                            itemModel.toggleFavorite();
-
-                            itemModel.setFavoriteColor(itemModel.isFavorite
-                                ? Colors.red
-                                : Colors.blue);
+                            if (value.selectedItem.contains(index)) {
+                              value.removeFavoriteItem(index);
+                            } else {
+                              value.addFavoriteItem(index);
+                            }
                           },
                           icon: Icon(
-                            model.isFavorite
+                            value.selectedItem.contains(index)
                                 ? Icons.favorite
                                 : Icons.favorite_border,
                             size: 32,
@@ -283,8 +271,8 @@ class _CustomGridExcState extends State<CustomGridExc> {
                   )
                 ],
               ),
-            );
-          }),
-    );
+            ),
+          );
+        });
   }
 }

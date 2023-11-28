@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 class FavoriteItemModel extends ChangeNotifier {
-  bool _isFavorite = false;
+  final List<int> _selectedItem = [];
 
-  bool get isFavorite => _isFavorite;
+  List<int> get selectedItem => _selectedItem;
 
-  void toggleFavorite() {
-    _isFavorite = !_isFavorite;
-    notifyListeners();
-  }
+  void addFavoriteItem (int value) {
+     _selectedItem.add(value);
+     notifyListeners();
+  } 
+ 
+ void removeFavoriteItem (int value) {
+     _selectedItem.remove(value);
+     notifyListeners();
+  }  
 }
