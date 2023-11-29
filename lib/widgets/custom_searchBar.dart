@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:physio_doc/theme/style.dart';
 
+
 class CustomSearchTextField extends StatelessWidget {
   final String hintTitle;
   const CustomSearchTextField({super.key, required this.hintTitle});
@@ -34,7 +35,7 @@ class CustomSearchTextField extends StatelessWidget {
                     fontSize: 22,
                   ),
                   border: InputBorder.none,
-                  ),
+                  ),   
             ),
           ),
         ],

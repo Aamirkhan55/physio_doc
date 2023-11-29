@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:physio_doc/core/services/provider/favorite_provider.dart';
 import 'package:physio_doc/theme/style.dart';
+import 'package:provider/provider.dart';
 
 class CustomElbowExc extends StatefulWidget {
   const CustomElbowExc({
@@ -136,88 +138,102 @@ class _CustomElbowExcState extends State<CustomElbowExc> {
           mainAxisExtent: 270,
         ),
         itemBuilder: (context, index) {
-          return Container(
-            decoration: BoxDecoration(
-              color: buttonClr.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: Column(
-              children: [
-                Container(
-                  width: 200.w,
-                  height: 150.h,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.r),
+          return Consumer<FavoriteItemModel>(
+            builder: (context, value, child) =>
+             Container(
+              decoration: BoxDecoration(
+                color: buttonClr.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    width: 200.w,
+                    height: 150.h,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20.r),
+                    ),
+                    child: Image.asset(
+                      "${elbowMap.elementAt(index)['image']}",
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                  child: Image.asset(
-                    "${elbowMap.elementAt(index)['image']}",
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SizedBox(
-                        width: 85.w,
-                        child: Text(
-                          "${elbowMap.elementAt(index)['title']}",
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: txtColor,
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(
+                          width: 85.w,
+                          child: Text(
+                            "${elbowMap.elementAt(index)['title']}",
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: txtColor,
+                            ),
                           ),
                         ),
-                      ),
-                      const Icon(
-                        Icons.favorite_border,
-                        size: 32,
-                        color: txtColor,
-                      ),
-                    ],
-                  ),
-                ),
-                 SizedBox(height: 25.h),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "${elbowMap.elementAt(index)['exicon']}",
+                       IconButton(
+                            onPressed: () {
+                              if (value.selectedItem.contains(index)) {
+                                value.removeFavoriteItem(index);
+                              } else {
+                                value.addFavoriteItem(index);
+                              }
+                            },
+                            icon: Icon(
+                              value.selectedItem.contains(index)
+                                  ? Icons.favorite
+                                  : Icons.favorite_border,
+                              size: 32,
+                              color: buttonClr,
                             ),
-                             SizedBox(width: 5.w),
-                            Text(
-                              "${elbowMap.elementAt(index)['ex_Value']}",
-                              style: const TextStyle(
-                                fontSize: 16,
-                                color: Colors.red,
-                                fontWeight: FontWeight.w600,
+                          ),
+                      ],
+                    ),
+                  ),
+                   SizedBox(height: 25.h),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                "${elbowMap.elementAt(index)['exicon']}",
                               ),
-                            ),
-                          ],
+                               SizedBox(width: 5.w),
+                              Text(
+                                "${elbowMap.elementAt(index)['ex_Value']}",
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      SizedBox(width: 32.w),
-                      InkWell(
-                        onTap: () {},
-                        child: const Icon(
-                          Icons.arrow_circle_right_outlined,
-                          color: Colors.blue,
-                        ),
-                      )
-                    ],
-                  ),
-                )
-              ],
+                        SizedBox(width: 32.w),
+                        InkWell(
+                          onTap: () {},
+                          child: const Icon(
+                            Icons.arrow_circle_right_outlined,
+                            color: Colors.blue,
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           );
         });

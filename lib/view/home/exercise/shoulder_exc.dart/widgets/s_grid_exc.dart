@@ -158,7 +158,6 @@ class _CustomGridExcState extends State<CustomGridExc> {
 
   @override
   Widget build(BuildContext context) {
-    // final favoriteItemProvider = Provider.of<FavoriteItemModel>(context);
     return GridView.builder(
         shrinkWrap: true,
         itemCount: shoulderExMap.length,
@@ -171,7 +170,8 @@ class _CustomGridExcState extends State<CustomGridExc> {
         ),
         itemBuilder: (context, index) {
           return Consumer<FavoriteItemModel>(
-            builder: (context, value, child) => Container(
+            builder: (context, value, chial) =>
+             Container(
               decoration: BoxDecoration(
                 color: buttonClr.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(15.r),
@@ -219,7 +219,7 @@ class _CustomGridExcState extends State<CustomGridExc> {
                                 ? Icons.favorite
                                 : Icons.favorite_border,
                             size: 32,
-                            color: txtColor,
+                            color: buttonClr,
                           ),
                         ),
                       ],

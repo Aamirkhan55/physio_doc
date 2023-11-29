@@ -5,6 +5,7 @@ class FavoriteItemModel extends ChangeNotifier {
 
   List<int> get selectedItem => _selectedItem;
 
+  
   void addFavoriteItem (int value) {
      _selectedItem.add(value);
      notifyListeners();
@@ -14,4 +15,6 @@ class FavoriteItemModel extends ChangeNotifier {
      _selectedItem.remove(value);
      notifyListeners();
   }  
+
+
 }
